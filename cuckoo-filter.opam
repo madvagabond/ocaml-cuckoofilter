@@ -1,0 +1,20 @@
+opam-version: "1.2"
+maintainer: "Sam Riyad"
+authors: ["Sam Riyad"]
+tags: []
+license: "MIT"
+homepage: "https://github.com/xnukernpoll/ocaml-cuckoofilter"
+dev-repo: "https://github.com/xnukernpoll/ocaml-cuckoofilter.git"
+bug-reports: "https://github.com/xnukernpoll/ocaml-cuckoofilter/issues"
+
+build: [
+  [ "jbuilder" "subst" ] {pinned}
+  [ "jbuilder" "build" "-p" name "-j" jobs ]
+]
+  
+depends: [
+  "jbuilder" {build}
+  "farmhash"
+  "cstruct"
+]
+  

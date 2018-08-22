@@ -81,7 +81,6 @@ let pick l =
            
 let insert t data =
   let n = num_buckets t in
-  print_endline "what's good"; 
   
 
   let rec aux i k fp  =
@@ -109,7 +108,6 @@ let insert t data =
   
 
   let (fp, i, i1) = search data n in
-  print_endline "hello";
   let (b1, b2) = (get_bucket t i), (get_bucket t i1) in
 
 
@@ -133,7 +131,7 @@ let insert t data =
     end
 
 
-let delete t data =
+let remove t data =
   let n = num_buckets t in 
   let (fp, i, i1) = search data n in
   let (b1, b2) = get_bucket t i, get_bucket t i1 in

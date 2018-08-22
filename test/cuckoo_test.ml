@@ -44,7 +44,7 @@ let lookups () =
 let deletes () =
   let filter = CuckooFilter.create 1000 in
   List.iter (fun x -> CuckooFilter.insert filter x; () ) words;
-  CuckooFilter.delete filter "heroin";
+  CuckooFilter.remove filter "heroin";
 
   let got_ct = CuckooFilter.count filter in
   let exp_ct = (List.length words) - 1 in
