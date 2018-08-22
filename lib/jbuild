@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(library
+ ((name CuckooFilter)
+  (public_name cuckoo-filter)
+  (libraries  (cstruct farmhash))
+  (synopsis "A Cuckoo Filter Implementation")))

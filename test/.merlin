@@ -1,0 +1,20 @@
+B ../_build/default/lib
+B ../_build/default/test
+FLG -w -40
+PKG alcotest
+PKG astring
+PKG bigarray
+PKG bytes
+PKG cmdliner
+PKG cstruct
+PKG farmhash
+PKG fmt
+PKG fmt.cli
+PKG fmt.tty
+PKG result
+PKG sexplib
+PKG sexplib.0
+PKG uchar
+PKG unix
+S .
+S ../lib

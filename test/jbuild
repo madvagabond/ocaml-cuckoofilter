@@ -1,0 +1,10 @@
+(executable
+ ((name cuckoo_test)
+  (libraries  (cuckoo-filter alcotest))))
+
+
+
+(alias
+ ((name runtest)
+  (action (run ${exe:cuckoo_test.exe} ))))
+
